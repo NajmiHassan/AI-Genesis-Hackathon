@@ -1,4 +1,3 @@
-
 import React, { useState, useCallback } from 'react';
 import { UploadIcon } from './icons';
 
@@ -47,7 +46,7 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ onFilesSelected, d
   return (
     <div className="bg-white p-6 rounded-xl shadow-md border border-slate-200">
        <div className="flex items-center mb-4">
-        <div className="bg-indigo-100 text-indigo-600 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">2</div>
+        <div className="bg-violet-100 text-violet-600 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">2</div>
         <h2 className="text-xl font-semibold text-slate-800">Upload Receipts</h2>
       </div>
 
@@ -57,13 +56,13 @@ export const ImageUploader: React.FC<ImageUploaderProps> = ({ onFilesSelected, d
         onDragLeave={onDragLeave}
         onDrop={onDrop}
         className={`mt-1 flex justify-center rounded-lg border-2 border-dashed px-6 pt-5 pb-6 transition-colors duration-200 ${
-          isDragging ? 'border-indigo-500 bg-indigo-50' : 'border-slate-300'
-        } ${disabled ? 'bg-slate-100 cursor-not-allowed' : 'cursor-pointer hover:border-indigo-400'}`}
+          isDragging ? 'border-violet-500 bg-violet-50' : 'border-slate-300'
+        } ${disabled ? 'bg-slate-100 cursor-not-allowed' : 'cursor-pointer hover:border-violet-400'}`}
       >
         <div className="space-y-1 text-center">
           <UploadIcon />
           <div className="flex text-sm text-slate-600">
-            <span className="relative rounded-md bg-white font-medium text-indigo-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 hover:text-indigo-500">
+            <span className="relative rounded-md bg-white font-medium text-violet-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-violet-500 focus-within:ring-offset-2 hover:text-violet-500">
               Upload files
             </span>
             <input id="file-upload" name="file-upload" type="file" className="sr-only" multiple accept="image/*" onChange={(e) => handleFileChange(e.target.files)} disabled={disabled} />

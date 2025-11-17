@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { ProcessedReceipt, ExpenseData } from '../types';
 import { CheckCircleIcon, XCircleIcon, ClockIcon } from './icons';
@@ -15,7 +14,7 @@ export const ResultsDashboard: React.FC<ResultsDashboardProps> = ({ processedRec
   return (
     <div className="bg-white p-6 rounded-xl shadow-md border border-slate-200">
       <div className="flex items-center mb-4">
-        <div className="bg-indigo-100 text-indigo-600 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">3</div>
+        <div className="bg-violet-100 text-violet-600 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">3</div>
         <h2 className="text-xl font-semibold text-slate-800">Processing Results</h2>
       </div>
       <div className="space-y-6">
@@ -74,7 +73,7 @@ const ExpenseDataTable: React.FC<{ data: ExpenseData }> = ({ data }) => {
       <div className="grid grid-cols-3 gap-2 text-sm mb-2 text-slate-600 font-semibold">
         <div>Merchant: <span className="font-normal">{data.merchant}</span></div>
         <div>Date: <span className="font-normal">{data.date}</span></div>
-        <div>Total: <span className="font-normal text-indigo-700 font-bold">{data.total.toFixed(2)}</span></div>
+        <div>Total: <span className="font-normal text-violet-700 font-bold">{data.total.toFixed(2)}</span></div>
       </div>
       <table className="min-w-full divide-y divide-slate-200 border rounded-md">
         <thead className="bg-slate-50">

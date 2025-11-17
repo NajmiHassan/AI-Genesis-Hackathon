@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 // A generic icon props type for consistent styling
@@ -29,7 +28,7 @@ export const UploadIcon: React.FC<IconProps> = (props) => (
 );
 
 export const LogoIcon: React.FC<IconProps> = (props) => (
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-indigo-600" {...props}>
+    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-violet-600" {...props}>
         <path d="M9 12h6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M9 15h6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
         <path d="M4 5v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -39,7 +38,14 @@ export const LogoIcon: React.FC<IconProps> = (props) => (
 
 export const SparklesIcon: React.FC<IconProps> = (props) => (
     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2} {...props}>
-        <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M16 17v4M14 19h4M10.5 10.5 13.5 13.5M10.5 13.5 13.5 10.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9.5 14.25l-2.586-2.586a1.5 1.5 0 00-2.122 2.122L7.378 16.5 9.5 14.25zm5-5l2.586 2.586a1.5 1.5 0 002.122-2.122L16.622 7.5 14.5 9.75z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4m11 11v4m-2 2h4" />
+    </svg>
+);
+
+export const ArrowDownIcon: React.FC<IconProps> = (props) => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3} {...props}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
     </svg>
 );
 

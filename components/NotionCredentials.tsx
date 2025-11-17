@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { InfoIcon, KeyIcon, DatabaseIcon } from './icons';
 
@@ -22,20 +21,20 @@ export const NotionCredentials: React.FC<NotionCredentialsProps> = ({
   return (
     <div className="bg-white p-6 rounded-xl shadow-md border border-slate-200">
       <div className="flex items-center mb-4">
-        <div className="bg-indigo-100 text-indigo-600 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">1</div>
+        <div className="bg-violet-100 text-violet-600 rounded-full h-8 w-8 flex items-center justify-center font-bold text-lg mr-3">1</div>
         <h2 className="text-xl font-semibold text-slate-800">Configure Notion</h2>
       </div>
       
-      <div className="bg-blue-50 border-l-4 border-blue-400 text-blue-800 p-4 rounded-md mb-6" role="alert">
+      <div className="bg-violet-50 border-l-4 border-violet-400 text-violet-800 p-4 rounded-md mb-6" role="alert">
         <div className="flex">
           <InfoIcon />
           <div>
             <p className="font-bold">First time setup?</p>
             <p className="text-sm">You need a Notion integration token and a database ID. 
-              <a href="https://developers.notion.com/docs/create-a-notion-integration" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-blue-600 ml-1">
+              <a href="https://developers.notion.com/docs/create-a-notion-integration" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-violet-600 ml-1">
                  Learn how to get your token
               </a> and 
-              <a href="https://developers.notion.com/docs/working-with-databases#retrieve-a-database" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-blue-600 ml-1">
+              <a href="https://developers.notion.com/docs/working-with-databases#retrieve-a-database" target="_blank" rel="noopener noreferrer" className="underline font-medium hover:text-violet-600 ml-1">
                  find your database ID.
               </a>
             </p>
@@ -58,7 +57,7 @@ export const NotionCredentials: React.FC<NotionCredentialsProps> = ({
               value={notionApiKey}
               onChange={(e) => setNotionApiKey(e.target.value)}
               placeholder="secret_..."
-              className="block w-full rounded-md border-slate-300 shadow-sm pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm h-10"
+              className="block w-full rounded-md border-slate-300 shadow-sm pl-10 focus:border-violet-500 focus:ring-violet-500 sm:text-sm h-10"
             />
           </div>
         </div>
@@ -76,7 +75,7 @@ export const NotionCredentials: React.FC<NotionCredentialsProps> = ({
               value={notionDbId}
               onChange={(e) => setNotionDbId(e.target.value)}
               placeholder="a1b2c3d4e5f6..."
-              className="block w-full rounded-md border-slate-300 shadow-sm pl-10 focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm h-10"
+              className="block w-full rounded-md border-slate-300 shadow-sm pl-10 focus:border-violet-500 focus:ring-violet-500 sm:text-sm h-10"
             />
           </div>
         </div>
