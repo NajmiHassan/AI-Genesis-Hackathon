@@ -59,6 +59,9 @@ Your Notion database should have these properties:
 2. **Text to Structure**: A second Gemini call uses JSON mode with a defined schema to parse the text into structured expense data
 3. **Save to Notion**: The structured data is sent to Notion's API via a CORS proxy
 
+<img width="726" height="802" alt="image" src="https://github.com/user-attachments/assets/cd6054d5-1b6a-46d4-92d1-e3d840a43b22" />
+
+
 ## Limitations
 
 - Uses a CORS proxy for Notion API calls (suitable for demos; production apps should use a backend)
