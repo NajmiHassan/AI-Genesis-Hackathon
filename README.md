@@ -36,6 +36,9 @@ Your Notion database should have these properties:
 - **Total** (Number)
 - **Items** (Text/Rich Text)
 
+<img width="1667" height="410" alt="image" src="https://github.com/user-attachments/assets/31c245fe-ef21-4c81-b0c6-efc66a570534" />
+
+
 ## Installation
 
 1. Clone the repository
@@ -61,14 +64,6 @@ Your Notion database should have these properties:
 
 <img width="726" height="802" alt="image" src="https://github.com/user-attachments/assets/cd6054d5-1b6a-46d4-92d1-e3d840a43b22" />
 
-
-## Limitations
-
-- Uses a CORS proxy for Notion API calls (suitable for demos; production apps should use a backend)
-- Gemini API key is embedded in the client (consider server-side implementation for production)
-- Text extraction accuracy depends on receipt image quality
-- Rich text fields are limited to 2000 characters
-
 ## Project Structure
 
 ```
@@ -84,7 +79,3 @@ Your Notion database should have these properties:
 ├── types.ts                     # TypeScript type definitions
 └── index.tsx                    # Application entry point
 ```
-
-## License
-
-This project was created as a demonstration of AI-powered document processing.
