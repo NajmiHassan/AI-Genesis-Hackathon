@@ -2,6 +2,9 @@
 
 A web application that extracts expense data from receipt images using AI and saves it directly to Notion databases.
 
+<img width="1352" height="757" alt="image" src="https://github.com/user-attachments/assets/27f61505-1cf3-452c-8136-cf2754018dc0" />
+
+
 ## What It Does
 
 This app processes receipt images through a simple three-step workflow:
